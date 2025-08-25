@@ -18,6 +18,11 @@ app.use(express.json())
 
 app.use("/api/signup", signupRoute)
 
+// Welcome route for Montero landing page
+app.get('/', (req, res) => {
+    res.send('Welcome Montero Landing page')
+})
+
 
 const PORT = process.env.PORT || 5000;
 
